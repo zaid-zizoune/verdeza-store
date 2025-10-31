@@ -2,6 +2,15 @@ body{
     margin: 0%;
     padding-top: 58px;
  }
+ html{
+   scroll-behavior: smooth;
+ }
+ section{
+   scroll-margin-top: 80px;
+ }
+ #contact{
+   scroll-margin-top: -80px;
+ }
 .header{
    position: fixed;
    top: 0;
@@ -28,26 +37,37 @@ body{
   font-weight: 100;
 
  }
- .header-links{
-    padding-right: 40px;
- }
- .header-links a {
+ 
+  .header-links nav ul{
+   list-style: none;
+   display:flex;
+   justify-content: center;
+  }
+ .header-links nav ul li a {
 color: white;
- font-family: "Fjalla One", sans-serif;
+ font-family: "Momo Trust Display", sans-serif;
  letter-spacing: 1px;
 padding: 5px 25px;
 font-size: 15px;
 text-decoration: none;
 border-radius: 15px;
+transition: color 0.3s;
 
  }
  .header-links a:hover {
     background-color: darkgreen;
  }
+ .nav-link.active{
+   background-color: darkgreen;
+ }
  .shop-icon{
     color: white;
     padding-right: 20px;
  }
+
+
+
+
  .home-page{
     background-color:#033d03 ;
     display: flex;
@@ -55,22 +75,25 @@ border-radius: 15px;
     align-items: center;
     color: white;
     padding: 10px 60px;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 40px 40px;
  }
  
 
  h2{
     color: #00c600;
+     font-family: "Momo Trust Display", sans-serif;
     font-size: 70px;
-    margin-top: -100px;
+    margin-top: -90px;
     margin-left: 10px;
      margin-left: 12px;
 
  }
  h3{
     color: #c6ffc6;
+     font-family: "Courgette", cursive;
     font-size: 35px;
-    margin-top: -35px;
+    letter-spacing: 3px;
+    margin-top: -45px;
     margin-left: 12px;
 
  }
@@ -114,4 +137,11 @@ border-radius: 15px;
 
 .slideshow img.active {
   opacity: 1;
+}
+
+.contact-page{
+   background-color: #033d03;
+   color: white;
+   border-radius: 40px 40px 0 0;
+   height: 300px;
 }
