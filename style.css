@@ -48,11 +48,11 @@ color: white;
  font-family: "Momo Trust Display", sans-serif;
  letter-spacing: 1px;
 padding: 5px 25px;
+margin-left: 10px;
 font-size: 15px;
 text-decoration: none;
 border-radius: 15px;
 transition: color 0.3s;
-
  }
  .header-links a:hover {
     background-color: darkgreen;
@@ -100,7 +100,8 @@ transition: color 0.3s;
  .btn-home-page a{
     color: #033d03;
     background-color:white ;
-    font-size: 25px;
+     font-family: "Momo Trust Display", sans-serif;
+    font-size: 20px;
     text-decoration: none;
     border-radius: 15px;
     margin-left: 12px;
@@ -139,9 +140,98 @@ transition: color 0.3s;
   opacity: 1;
 }
 
-.contact-page{
-   background-color: #033d03;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.products-cards{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.cards{
+ background-color:#033d03;
+border-radius: 10px;
+   height: 350px;
+   width: 260px;
+   margin: 10px;
+}
+#contact{
+    background-color: #033d03;
    color: white;
    border-radius: 40px 40px 0 0;
    height: 300px;
+}
+
+h5{
+  
+   color: #00c600;
+   font-family: "Momo Trust Display", sans-serif;
+   font-size: 50px;
+   margin: 0;
+   justify-content: center;
+   text-align: center;
+   padding:  20px 0 30px 0;
+}
+
+.contact-icon-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+list-style: none;
+   gap: 60px;
+ margin: 0;
+}
+.contact-icon-left a {
+    color: #c6ffc6;
+   display: flex;
+   gap: 10px;
+   padding: 0 0 20px 0;
+   font-size: 25px;
+   text-decoration: none;
+
+}
+.contact-icon-left a:hover{
+   color: white;
+}
+hr{
+width: 76%;
+}
+.contact-icon-right{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   gap: 60px;
+}
+.contact-icon-right a{
+color: white;
+   display: flex;
+   gap: 10px;
+   padding: 20px 0 20px 0;
+   font-size: 45px;
+   text-decoration: none;
+}
+.instagram:hover{
+   color: #e1306c;
+}
+.whatsapp:hover{
+  color:#25D366 ;
+}
+.facebook:hover{
+     color:#1877F2 ;
 }
