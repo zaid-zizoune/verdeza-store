@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     padding-top: 58px;
+    background-color: #ececec;
  }
  html{
    scroll-behavior: smooth;
@@ -157,10 +158,11 @@ transition: all 0.8s;
 
 
 
-
-
+#products{
+}
 
 .products-cards{
+   
 display: flex;
 justify-content: center;
 align-items: center;
@@ -168,53 +170,64 @@ flex-wrap: wrap;
 }
 .cards{
    display: flex;
-   flex-direction: column;
-   background-color: #033d03;
+      flex-direction: column;
+      background-color: white;
 border-radius: 5px;
    height: 490px;
-   width: 280px;
-   padding: 5px;
+   width: 290px;
    margin: 3px;
-   justify-content: center;
-   align-items: center;
    overflow: hidden;
-   border: solid 1px #e0e0e0;
+   border: solid 1px #d8d8d8;
 }
 .cards img{
    display: block;
    width: 100%;
    height: 70%;
-   margin: 0px auto;
-   border-radius: 3px;
    object-fit: cover;
 
 }
 .cards-info{
-   margin: 4px;
-   justify-content: center;
-   align-items: center;
+   height: 20%;
+   
 }
 .cards-name{
-    font-family: "Oswald", sans-serif;
-   font-size: 17px;
+font-family: "League Spartan", sans-serif;
+   margin: 18px;
+   font-size: 25px;
    font-weight: normal;
-   color: white;
+   color: black;
+}
+.preis{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   margin: 18px;
+
+}
+.preis-before{
+   text-decoration: line-through;
+    font-size: 20px;
+}
+.preis-after{
+   font-size: 20px;
+   font-family: "Oswald", sans-serif;
 }
 .btn-cart{
-    color: #c6ffc6;
-    background-color: #00c600;
+   height: auto;
+    color: #033d03;
+    background-color: white;
      font-family: "Momo Trust Display", sans-serif;
     font-size: 15px;
-    border-radius: 15px;
+    border-radius: 5px;
     width: 130px;
     height: 40px;
     padding: 10px;
-    margin: 8px;
+    margin: 5px auto 18px 18px ;
 transition: all 0.5s;
 }
 .btn-cart:hover{
-   background-color: white;
-   color: #033d03;
+   background-color: #033d03;
+   color: #25D366;
  }
 #contact{
     background-color: #033d03;
