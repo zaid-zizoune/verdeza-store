@@ -89,7 +89,7 @@ border-radius: 15px;
 
  }
  h3{
-    color: #c6ffc6;
+    color: white;
      font-family: "Courgette", cursive;
     font-size: 35px;
     letter-spacing: 3px;
@@ -98,21 +98,21 @@ border-radius: 15px;
 
  }
  .btn-home-page a{
-    color: #033d03;
-    background-color:white ;
+    color:  white;
+    background-color: #00c600 ;
      font-family: "Momo Trust Display", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-left: 12px;
     width: 130px;
     height: 40px;
-    padding: 10px;
+    padding: 15px  20px  ;
 transition: all 0.8s;
  }
  .btn-home-page a:hover{
-   background-color: #00c600;
-   color: #c6ffc6;
+   background-color: white;
+   color: #00c600 ;
  }
  .btn-home-page::before{
    height: 100%;
@@ -167,13 +167,14 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
+
 }
 .cards{
    display: flex;
       flex-direction: column;
       background-color: white;
 border-radius: 5px;
-   height: 490px;
+   height: 500px;
    width: 290px;
    margin: 3px;
    overflow: hidden;
@@ -182,7 +183,7 @@ border-radius: 5px;
 .cards img{
    display: block;
    width: 100%;
-   height: 70%;
+   height: 65%;
    object-fit: cover;
 
 }
@@ -191,43 +192,49 @@ border-radius: 5px;
    
 }
 .cards-name{
-font-family: "League Spartan", sans-serif;
-   margin: 18px;
+ font-family: "Pacifico", cursive;
+   margin: 8px 0 0 18px;
    font-size: 25px;
    font-weight: normal;
    color: black;
 }
 .preis{
    display: flex;
-   flex-direction: row;
-   gap: 10px;
-   margin: 18px;
-
+   flex-direction: column;
+   gap: 3px;
+   margin-left: 18px;
 }
 .preis-before{
    text-decoration: line-through;
     font-size: 20px;
+    color: gray;
+    font-family: Almarai,sans-serif;
 }
 .preis-after{
-   font-size: 20px;
-   font-family: "Oswald", sans-serif;
+   font-size: 26px;
+   color: darkgreen;
+   font-family: Almarai, sans-serif;
+   font-weight: 600;
 }
 .btn-cart{
-   height: auto;
-    color: #033d03;
-    background-color: white;
-     font-family: "Momo Trust Display", sans-serif;
+     font-family: "Momo Trust Display", sans-serif; 
+   display: flex;
+   flex-direction: row;
+      justify-content: center;
+   align-items: center;
+   margin: auto;
     font-size: 15px;
-    border-radius: 5px;
-    width: 130px;
-    height: 40px;
     padding: 10px;
-    margin: 5px auto 18px 18px ;
+    color: white;
+    background-color:  #033d03;
+      width: 90%;
+    height: 40px;
+     border-radius: 5px;
 transition: all 0.5s;
 }
 .btn-cart:hover{
-   background-color: #033d03;
-   color: #25D366;
+   background-color: white;
+   color:  #033d03;
  }
 #contact{
     background-color: #033d03;
