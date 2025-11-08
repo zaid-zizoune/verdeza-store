@@ -189,6 +189,9 @@ border-radius: 5px;
    font-size: 25px;
    font-weight: normal;
    color: black;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
 .preis{
    display: flex;
@@ -247,50 +250,3 @@ h5{
    cursor: default;
 }
 
-.contact-icon-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-list-style: none;
-   gap: 60px;
- margin: 0;
-}
-.contact-icon-left a {
-    color: #c6ffc6;
-   display: flex;
-   gap: 10px;
-   padding: 0 0 20px 0;
-   font-size: 25px;
-   text-decoration: none;
-
-}
-.contact-icon-left a:hover{
-   color: white;
-}
-hr{
-width: 76%;
-}
-.contact-icon-right{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   list-style: none;
-   gap: 60px;
-}
-.contact-icon-right a{
-color: white;
-   display: flex;
-   gap: 10px;
-   padding: 20px 0 20px 0;
-   font-size: 45px;
-   text-decoration: none;
-}
-.instagram:hover{
-   color: #e1306c;
-}
-.whatsapp:hover{
-  color:#25D366 ;
-}
-.facebook:hover{
-     color:#1877F2 ;
-}
