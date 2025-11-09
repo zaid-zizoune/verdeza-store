@@ -232,21 +232,106 @@ transition: all 0.5s;
    color:  #033d03;
  }
 #contact{
-    background-color: #033d03;
-   color: white;
-   border-radius: 40px 40px 0 0;
-   height: 300px;
+    background-color: white;
+   height: 500px;
+   margin-top: 40px;
 }
-
-h5{
+.contact-page{
   
+   display: flex;
+   flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family:   "Oswald", sans-serif;
+}
+h5{
+  display: flex;
    color: #00c600;
    font-family: "Momo Trust Display", sans-serif;
-   font-size: 50px;
-   margin: 0;
+   font-size: 40px;
+   margin: 20px 0 0 40px;
    justify-content: center;
-   text-align: center;
-   padding:  20px 0 30px 0;
+   align-items: center;
    cursor: default;
 }
+.contact-img{
 
+   width: 300px;
+  
+}
+.3f-img {
+   width: 100px;
+
+}
+.cnt-srvc{
+   display: flex;
+   background-color: #ececec;
+   
+}
+h6{
+   color: #00c600;
+   font-family: "Momo Trust Display", sans-serif;
+   font-size: 30px;
+   margin: 15px 0 10px  40px;
+   cursor: default;
+
+
+}
+.direct-contact{ 
+   display: flex;
+   flex-direction: column;
+    width: 500px;
+   height: 200px;
+    }
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+   gap: 2px;
+   margin: 10px;
+    
+}
+
+
+.contact-icon a {
+    color: black;
+   display: flex;
+   margin-left: 3px;
+   gap: 5px;
+   font-size: 20px;
+   text-decoration: none;
+   align-items: center;
+
+}
+.phone:hover{
+   color: rgb(24, 187, 24);
+}
+.instagram:hover{
+   color: #e1306c;
+}
+.whatsapp:hover{
+  color:#25D366 ;
+}
+.facebook:hover{
+   color: white;
+     color:#1877F2 ;
+}
+.service{
+    display: flex;
+   flex-direction: column;
+   width: 500px;
+   height: 200px;
+}
+.service-icon ul  {
+  font-size: 19px;
+  list-style: none;
+   gap: 15px;
+   margin-top: 5px;
+   margin-bottom: 0;
+}
+.service-icon li {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+margin: 5px 0px 5PX 15px;
+}
