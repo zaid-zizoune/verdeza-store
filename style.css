@@ -59,6 +59,7 @@ border-radius: 15px;
  }
  .nav-link.active{
    background-color: darkgreen;
+   color: #00c600;
  }
  .shop-icon{
     color: white;
@@ -69,7 +70,11 @@ border-radius: 15px;
 
 
  .home-page{
-    background-color:#033d03 ;
+    background-image: url(home-images/home-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 530px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,33 +87,33 @@ border-radius: 15px;
  h2{
     color: #00c600;
      font-family: "Momo Trust Display", sans-serif;
-    font-size: 70px;
-    margin-top: -90px;
-    margin-left: 10px;
-     margin-left: 12px;
+    font-size: 55px;
+    margin: 0 0 10px 12px;
 
  }
  h3{
     color: white;
-     font-family: "Courgette", cursive;
-    font-size: 35px;
+     font-family: "Lora", serif;
+    font-size: 30px;
     letter-spacing: 3px;
-    margin-top: -45px;
-    margin-left: 12px;
+    margin: 15px 0 1px 12px;
 
  }
  .btn-home-page a{
     color:  white;
     background-color: #00c600 ;
      font-family: "Momo Trust Display", sans-serif;
-    font-size: 15px;
+     display: inline-flex;
+     white-space: nowrap;
+     align-items: center;
+     justify-content: center;
+    font-size: 13px;
     text-decoration: none;
     border-radius: 25px;
-    margin-left: 12px;
-    width: 130px;
-    height: 40px;
-    padding: 15px  20px  ;
+    margin: 40px 0 0 12px;
+    padding: 13px  15px  ;
 transition: all 0.8s;
+width: auto;
  }
  .btn-home-page a:hover{
    background-color: white;
@@ -119,9 +124,9 @@ transition: all 0.8s;
  }
  .slideshow {
   position: relative;
-  width: 450px;
-  height: 370px;
-  margin: 50px 40px;
+  width: 550px;
+  height: 390px;
+  margin: 40px 20px;
   overflow: hidden;
   border-radius: 10px;
   background-color: white;
@@ -171,6 +176,7 @@ border-radius: 5px;
    margin: 3px;
    overflow: hidden;
    border: solid 1px #d8d8d8;
+   cursor: pointer;
 }
 .cards img{
    display: block;
@@ -184,7 +190,7 @@ border-radius: 5px;
    
 }
 .cards-name{
- font-family: "League Spartan", sans-serif;
+ font-family: "Bree Serif", serif;
    margin: 10px 0 10px 18px;
    font-size: 28px;
    font-weight: 500;
@@ -232,44 +238,48 @@ transition: all 0.5s;
    color:  #033d03;
  }
 #contact{
-    background-color: white;
-   height: 500px;
+    background-image: url(contact-img/contact-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   height: 490px;
    margin-top: 40px;
+   padding: 10px;
 }
 .contact-page{
-  
    display: flex;
    flex-direction: column;
 justify-content: center;
 align-items: center;
 font-family:   "Oswald", sans-serif;
+
 }
 h5{
   display: flex;
    color: #00c600;
    font-family: "Momo Trust Display", sans-serif;
    font-size: 40px;
-   margin: 20px 0 0 40px;
+   margin: 40px 0 0 40px;
    justify-content: center;
    align-items: center;
    cursor: default;
 }
-.contact-img{
-
-   width: 300px;
-  
-}
 
 .cnt-srvc{
    display: flex;
-   background-color: #ececec;
    
+margin-top: 70px;   
+gap: 10px;
 }
 h6{
    color: #00c600;
    font-family: "Momo Trust Display", sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+      margin: 0 0 10px  0;
+
    font-size: 30px;
-   margin: 15px 0 10px  40px;
    cursor: default;
 
 
@@ -277,15 +287,18 @@ h6{
 .direct-contact{ 
    display: flex;
    flex-direction: column;
-    width: 500px;
+    width: 350px;
    height: 200px;
+   padding: 10px;
+      background-color: #ececec;
+border-radius: 10px;
+
     }
 .contact-icon {
   display: flex;
   flex-direction: column;
   list-style: none;
    gap: 7px;
-   margin: 10px;
     
 }
 
@@ -316,8 +329,12 @@ h6{
 .service{
     display: flex;
    flex-direction: column;
-   width: 500px;
+   width: 350px;
    height: 200px;
+   padding: 10px;
+      background-color: #ececec;
+border-radius: 10px;
+
 }
 .service-icon ul  {
     display: flex;
@@ -332,5 +349,4 @@ h6{
    display: flex;
    align-items: center;
    gap: 15px;
-margin: 0 0px 0 15px;
 }
