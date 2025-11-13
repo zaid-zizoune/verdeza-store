@@ -18,12 +18,18 @@ body{
    left: 0;
    width: 100%;
     background-color: #033d03;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 15px 5px;
     z-index: 1000;
-    justify-content:space-between;
  }
+  .header-links {
+   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  }
 .logo{
     width: 75px;
     display: flex;
@@ -38,11 +44,10 @@ body{
   font-weight: 100;
     cursor: pointer;
  }
- 
+
   .header-links nav ul{
    list-style: none;
    display:flex;
-   justify-content: center;
   }
  .header-links nav ul li a {
 color: white;
@@ -177,6 +182,7 @@ border-radius: 5px;
    overflow: hidden;
    border: solid 1px #d8d8d8;
    cursor: pointer;
+   text-decoration: none;
 }
 .cards img{
    display: block;
