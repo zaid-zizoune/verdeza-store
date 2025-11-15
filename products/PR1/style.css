@@ -1,13 +1,13 @@
 body , html{
     margin: 0;
- padding-top: 40px;
+    padding: 0;
+    overflow-x: hidden;
+     
 }
 .header{
-   position: fixed;
    top: 0;
    left: 0;
    width: 100%;
-   height: 40px;
     background-color: #033d03;
     display: flex;
     align-items: center;
@@ -28,31 +28,38 @@ body , html{
   font-weight: 100;
     cursor: pointer;
  }
-.products-page-ctr{
-    background-color: aqua;
+.products-page-cntr{
     display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+
 width: 100%;
-height: 100vh;
+height: auto;
 }
 .img-cntr{
-   width: 50%;
-   padding: 15px;
+
     display: flex;
+   padding: 15px;
     flex-direction: column;
-background-color: coral;
+background-color: white;
 overflow: hidden;
  object-fit: contain;
  gap: 10px;
+ overflow: hidden;
+ position:sticky ;
 }
 .main-img{
-flex: 1;
 overflow: hidden;
+    height:  550px;
+    width: 570px;
 background-color: black;
+overflow: hidden;
 }
 .main-img img{
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height:  100%;
+    object-fit: cover;
 }
 .side-img{
 display: flex;
@@ -63,32 +70,73 @@ gap: 2px;
 
 }
 .side-img img{
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
     cursor: pointer;
 }
-.description-cntr{
-    width: 50%;
-    padding: 25px;
-background-color: lightgreen;
+.description-page-cntr{
+    
+    display: flex;
+    flex-direction: column;
+background-color: white;
     overflow: hidden;
     overflow-wrap: break-word;
+    align-items: start;
+    padding: 20px 20px 20px 0;
+}
+.description-cntr{
+    width: 600px;
 }
 h2{
-    color: blue;
-    font-size: 30px;
-}
-.description-fr{
-white-space: normal;
-
-}
-h3{
-    color: royalblue;
-     text-align: right;
-     font-size: 30px;
+   
+     color:darkgreen;
+     margin: 15px 0     15px 0;
+    font-family: "Readex Pro", sans-serif;
+    font-size:25px;
+     text-align: left;
 }
 
+.preis{
+   display: flex;
+   flex-direction: column;
+   gap: 3px;
+}
+.preis-before{
+   text-decoration: line-through;
+    font-size: 25px;
+    color: gray;
+    font-family: Almarai,sans-serif;
+}
+.preis-after{
+   font-size: 33px;
+   color: darkgreen;
+   font-family: Almarai, sans-serif;
+   font-weight: 500;
+   margin-top: 20px;
+}
+.discount-badge{
+    background-color: red;
+    color: white;
+    padding: 3px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+width: fit-content;
+
+
+}
 .description-ar{
     text-align: right;
+     font-family: "Readex Pro", sans-serif;
+     direction: rtl;
+    font-size: 18px;
+      margin:10px 0 15px 0;
+}
+
+
+.description-fr{
+white-space: normal;
+ font-family: "Readex Pro", sans-serif;
+    font-size: 18px;
+    margin: 0;
 }
