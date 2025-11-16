@@ -33,9 +33,7 @@ body , html{
     justify-content: flex-start;
     align-items: start;
     gap: 20px;
-
 width: 100%;
-height: auto;
 }
 .img-cntr{
 
@@ -43,11 +41,8 @@ height: auto;
    padding: 15px;
     flex-direction: column;
 background-color: white;
-overflow: hidden;
- object-fit: contain;
  gap: 10px;
- overflow: hidden;
- position:sticky ;
+
 }
 .main-img{
 overflow: hidden;
@@ -66,7 +61,7 @@ display: flex;
 width: 100%;
 height: auto;
 overflow: hidden;
-gap: 2px;
+gap: 5px;
 
 }
 .side-img img{
@@ -75,12 +70,15 @@ gap: 2px;
     object-fit: cover;
     cursor: pointer;
 }
+.side-img img.active{
+    border: solid 2px black;
+}
 .description-page-cntr{
     
     display: flex;
     flex-direction: column;
 background-color: white;
-    overflow: hidden;
+    overflow: visible;
     overflow-wrap: break-word;
     align-items: start;
     padding: 20px 20px 20px 0;
@@ -90,10 +88,10 @@ background-color: white;
 }
 h2{
    
-     color:darkgreen;
-     margin: 15px 0     15px 0;
+     color:black;
+     margin: 15px 0;
     font-family: "Readex Pro", sans-serif;
-    font-size:25px;
+    font-size:20px;
      text-align: left;
 }
 
@@ -125,18 +123,196 @@ width: fit-content;
 
 
 }
+.order-form-cntr{
+
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    border: solid 2px darkgreen;
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    padding: 25px;
+    margin: 15px 0 30px 0;
+ align-items: center;
+justify-content: center;
+}
+#order-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+h3{
+    font-family: "Readex Pro", sans-serif;
+    font-size:20px;
+ text-align: center;
+  direction: rtl;
+  margin:0 0 25px 0;
+}
+.order-form-cntr input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: solid 2px darkgreen ;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+  
+}
+.order-form-cntr button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: darkgreen;
+color: white;
+font-size: 40px;
+    width: 100%;
+    height: 70px;
+    margin-top: 40px;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 20px;
+font-family: "Momo Trust Display", sans-serif; 
+    }
+
+.order-form-cntr button:hover{
+        background-color: white;
+        color: darkgreen;
+    }
 .description-ar{
     text-align: right;
      font-family: "Readex Pro", sans-serif;
      direction: rtl;
-    font-size: 18px;
-      margin:10px 0 15px 0;
+    font-size: 15px;
+      margin:20px 0 15px 0;
 }
 
 
 .description-fr{
 white-space: normal;
  font-family: "Readex Pro", sans-serif;
-    font-size: 18px;
-    margin: 0;
+    font-size: 15px;
+    margin: 20px 0 10px 0;
+}
+.features-dsc{
+ text-align: right;
+     font-family: "Readex Pro", sans-serif;
+     direction: rtl;
+    font-size: 15px;
+     margin: 20px 0 10px 0;
+     line-height: 30px;
+}
+#contact{
+    background-image: url(contact-back.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   min-height: 490px;
+   margin-top: 40px;
+   padding: 10px;
+}
+.contact-page{
+   display: flex;
+   flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family:   "Oswald", sans-serif;
+
+}
+h5{
+  display: flex;
+   color: #00c600;
+   font-family: "Momo Trust Display", sans-serif;
+   font-size: 40px;
+   margin: 40px 0 0 40px;
+   justify-content: center;
+   align-items: center;
+   cursor: default;
+}
+
+.cnt-srvc{
+   display: flex;
+   
+margin-top: 70px;   
+gap: 10px;
+}
+h6{
+   color: #00c600;
+   font-family: "Momo Trust Display", sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+      margin: 0 0 10px  0;
+
+   font-size: 30px;
+   cursor: default;
+
+
+}
+.direct-contact{ 
+   display: flex;
+   flex-direction: column;
+    width: 350px;
+   height: 200px;
+   padding: 10px;
+      background-color: #ececec;
+border-radius: 10px;
+
+    }
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+   gap: 7px;
+    
+}
+
+
+.contact-icon a {
+    color: black;
+   display: flex;
+   margin-left: 3px;
+   gap: 8px;
+   font-size: 17px;
+   text-decoration: none;
+   align-items: center;
+
+}
+.phone:hover{
+   color: rgb(24, 187, 24);
+}
+.instagram:hover{
+   color: #e1306c;
+}
+.whatsapp:hover{
+  color:#25D366 ;
+}
+.facebook:hover{
+   color: white;
+     color:#1877F2 ;
+}
+.service{
+    display: flex;
+   flex-direction: column;
+   width: 350px;
+   height: 200px;
+   padding: 10px;
+      background-color: #ececec;
+border-radius: 10px;
+
+}
+.service-icon ul  {
+    display: flex;
+    flex-direction: column;
+  font-size: 16px;
+  list-style: none;
+   gap: 8px;
+   margin-top: 10px;
+   margin-bottom: 0;
+}
+.service-icon li {
+   display: flex;
+   align-items: center;
+   gap: 15px;
 }
