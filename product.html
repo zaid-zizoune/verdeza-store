@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produit - Verdeza</title>
+
+  <!-- خطوط Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bree+Serif&family=Changa+One:ital@0;1&family=Courgette&family=Creepster&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Indie+Flower&family=League+Spartan:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Luckiest+Guy&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="product.css" />
+</head>
+<body>
+
+  <!-- Header ثابت -->
+  <div class="header">
+    <div class="logo">
+      <img class="logo" src="../home-images/logo.jpeg" alt="Logo" />
+      <h1>Verdeza</h1>
+    </div>
+  </div>
+
+  <!-- صفحة المنتج -->
+  <div class="products-page-cntr">
+    <div class="img-cntr">
+      <div class="main-img">
+        <img id="main-img" src="" alt="Produit Image" />
+      </div>
+      <div class="side-img" id="side-imgs">
+        <!-- صور جانبية يتم إضافتها بواسطة JS -->
+      </div>
+    </div>
+
+    <div class="description-page-cntr">
+      <div class="description-cntr">
+        <h2 id="product-name"></h2>
+        <h2 id="product-name-ar"></h2>
+        <hr>
+        <div class="preis">
+          <span class="preis-after" id="price-after"></span>
+          <span class="preis-before" id="price-before"></span>
+          <div class="discount-badge" id="discount"></div>
+        </div>
+
+        <!-- نموذج الطلب -->
+        <div class="order-form-cntr">
+          <h3>للطلب يرجى ملء هذا النموذج سنتصل بكم في أقرب وقت ممكن!</h3>
+          <form id="order-form">
+            <input type="number" name="quantity" placeholder="Quantité" min="1" value="1" required />
+            <input type="text" name="name" placeholder="Nom" required />
+            <input type="tel" name="phone" placeholder="Téléphone" required />
+            <input type="text" name="city" placeholder="Ville" required />
+            <button type="submit">Commander maintenant</button>
+          </form>
+        </div>
+
+        <hr>
+        <p class="description-fr" id="description-fr"></p>
+        <p class="description-ar" id="description-ar"></p>
+        <p class="features-dsc" id="features"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- قسم الاتصال -->
+  <section id="contact">
+    <h5>CONTACT</h5>
+    <div class="contact-page">
+      <div class="cnt-srvc">
+        <div class="direct-contact">
+          <h6>DIRECT CONTACT</h6>
+          <ul class="contact-icon">
+            <li><a class="phone" href="https://wa.me/212649886682"><i class="fa-solid fa-phone"></i>+212 649886682</a></li>
+            <li><a class="instagram" href="https://www.instagram.com/verdeza_deco"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+            <li><a class="whatsapp" href="https://wa.me/212649886682"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
+            <li><a class="facebook" href="https://www.facebook.com/share/16VdmAGUqR/"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h6>SERVICE</h6>
+          <ul>
+            <li><i class="fa-solid fa-truck-fast"></i>Livraison gratuite</li>
+            <li><i class="fa-solid fa-house"></i>Partout au Maroc</li>
+            <li><i class="fa-solid fa-calendar"></i>Livraison rapide -48h</li>
+            <li><i class="fa-solid fa-handshake"></i>Paiement à la livraison</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="product.js"></script>
+</body>
+</html>
