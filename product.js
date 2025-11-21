@@ -1,4 +1,8 @@
-
+if (typeof emailjs === "undefined") {
+    console.error("EmailJS SDK لم يتم تحميله!");
+} else {
+    emailjs.init("FF-xWGtx6qAxTsxfu");
+}
 const products = {
   "PR1": {
     name: "Fleurs de cerisier Rose & Blanc apporte une touche élégante et naturelle à n’importe quel espace.",
@@ -854,35 +858,3 @@ document.getElementById("features").innerHTML = product.features;
 // ----------------------------
 //       إرسال الطلب عبر EmailJS
 // ----------------------------
-document.addEventListener("DOMContentLoaded", function() {
-    const orderForm = document.getElementById("order-form");
-
-    orderForm.addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const productName = document.getElementById("product-name").textContent;
-        const productPrice = document.getElementById("price-after").textContent;
-        const quantity = this.quantity.value;
-        const customerName = this.name.value;
-        const customerPhone = this.phone.value;
-        const customerCity = this.city.value;
-
-        const templateParams = {
-            product_name: productName,
-            product_price: productPrice,
-            quantity: quantity,
-            customer_name: customerName,
-            customer_phone: customerPhone,
-            customer_city: customerCity
-        };
-
-        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
-        .then(function(response) {
-            console.log("SUCCESS!", response.status, response.text);
-            window.location.href = "success.html";
-        }, function(error) {
-            console.log("FAILED...", error);
-            alert("حدث خطأ أثناء إرسال الطلب، يرجى المحاولة لاحقًا.");
-        });
-    });
-});

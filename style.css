@@ -66,10 +66,6 @@ border-radius: 15px;
    background-color: darkgreen;
    color: #00c600;
  }
- .shop-icon{
-    color: white;
-    padding-right: 20px;
- }
 
 
 
@@ -196,7 +192,8 @@ border-radius: 5px;
    
 }
 .cards-name{
- font-family: "Roboto", sans-serif;
+font-family: "Momo Trust Display", sans-serif; 
+   font-weight: 600;
    margin: 10px 0 10px 18px;
    font-size: 28px;
    font-weight: 500;
@@ -361,4 +358,852 @@ border-radius: 10px;
    font-size: 20px;
    justify-content: center;
    align-items: center;
+}
+
+/* ----------------------------
+   Media Queries 
+---------------------------- */
+@media only screen and (min-width: 1300px) {
+    /* CSS هنا يطبق فقط على الشاشات الكبيرة جداً */
+
+    .header {
+        padding: 20px 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .home-page {
+        height: 650px;
+        padding: 40px 80px;
+    }
+
+    .slideshow {
+        width: 650px;
+        height: 450px;
+    }
+
+    .cards {
+        width: 260px;
+        height: 480px;
+        margin: 10px;
+    }
+
+    h4 {
+        font-size: 45px;
+    }
+
+    .contact-page {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 1000px){
+   .header {
+        display: flex;
+        justify-content: space-between; /* شعار على اليسار، روابط على اليمين */
+        align-items: center;
+        padding: 10px 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #033d03;
+        z-index: 1000;
+    }
+   .logo {
+       width: 60px;
+       padding-left: 10;
+   }
+
+
+    h1 {
+        font-size: 20px; /* حجم مناسب للهاتف */
+        margin: 0;
+        color: white;
+        font-family: "Momo Trust Display", sans-serif;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .header-links {
+        position: static; /* إزالة absolute */
+        transform: none; /* إزالة translate */
+   margin: 0 30px;
+      }
+
+    .header-links nav ul {
+        display: flex;
+    }
+
+    .header-links nav ul li a {
+        font-size: 15px;
+        padding: 8px 8px;
+        margin: 0 15px;
+    }
+
+
+    /* Home Page */
+    .home-page {
+        height: 450px;
+        padding: 5px 15px;
+    }
+    h2 {
+        font-size: 35px;
+        margin-left: 15px;
+        max-width: 300px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .slideshow {
+        max-width: 250px;
+        max-height: 320px;
+        margin: 15px 15px 15px 30px;
+    }
+    .btn-home-page a{
+       font-size: 13px;
+       margin: 10px 15px;
+       padding: 8px 8px;
+    }
+
+    /* Products Cards */
+    h4{
+      font-size: 30px;
+      margin: 15px;
+    }
+    .products-cards {
+      margin: 0%;
+      padding: 0%;
+        gap: 5px;
+    }
+    .cards {
+       margin: 0%;
+      padding: 0%;
+        width: 32%; /* 2 cards per row */
+        height: 440px;
+    }
+    .cards-name {
+        font-size: 23px;
+        margin: 6px 0 6px 8px;
+    }
+    .preis{
+      margin-left: 10px;
+    }
+    .preis-before {
+        font-size: 20px;
+    }
+    .preis-after {
+        font-size: 25px;
+    }
+    .btn-cart {
+        font-size: 15px;
+        padding: 5px;
+        height: 35px;
+        width: 95%;
+    }
+
+    /* Contact Page */
+    #contact {
+        height: 300px;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 25px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 80%;
+    }
+    h6 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 18px;
+    }
+    .service-icon ul li {
+        gap: 3px;
+        font-size: 18px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+}
+@media only screen and (max-width: 800px){
+   /* Header */
+   .header {
+        display: flex;
+        justify-content: space-between; /* شعار على اليسار، روابط على اليمين */
+        align-items: center;
+        padding: 10px 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #033d03;
+        z-index: 1000;
+    }
+   .logo {
+       width: 60px;
+       padding-left: 10;
+   }
+
+
+    h1 {
+        font-size: 20px; /* حجم مناسب للهاتف */
+        margin: 0;
+        color: white;
+        font-family: "Momo Trust Display", sans-serif;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .header-links {
+        position: static; /* إزالة absolute */
+        transform: none; /* إزالة translate */
+   margin: 0 20px;
+      }
+
+    .header-links nav ul {
+        display: flex;
+    }
+
+    .header-links nav ul li a {
+        font-size: 15px;
+        padding: 8px 8px;
+        margin: 0 15px;
+    }
+
+
+    /* Home Page */
+    .home-page {
+        height: 450px;
+        padding: 5px 15px;
+    }
+    h2 {
+        font-size: 35px;
+        margin-left: 15px;
+        max-width: 300px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .slideshow {
+        max-width: 300px;
+        max-height: 320px;
+        margin: 15px 15px 15px 30px;
+    }
+    .btn-home-page a{
+       font-size: 10px;
+       margin: 10px 15px;
+       padding: 8px 8px;
+    }
+
+    /* Products Cards */
+    h4{
+      font-size: 30px;
+      margin: 15px;
+    }
+    .products-cards {
+      margin: 0%;
+      padding: 0%;
+        gap: 5px;
+    }
+    .cards {
+       margin: 0%;
+      padding: 0%;
+        width: 32%; /* 2 cards per row */
+        height: 430px;
+    }
+    .cards-name {
+        font-size: 23px;
+        margin: 6px 0 6px 8px;
+    }
+    .preis{
+      margin-left: 10px;
+    }
+    .preis-before {
+        font-size: 20px;
+    }
+    .preis-after {
+        font-size: 25px;
+    }
+    .btn-cart {
+        font-size: 12px;
+        padding: 5px;
+        height: 35px;
+        width: 95%;
+    }
+
+    /* Contact Page */
+    #contact {
+        height: 300px;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 25px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 80%;
+    }
+    h6 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 18px;
+    }
+    .service-icon ul li {
+        gap: 3px;
+        font-size: 18px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+  }
+@media only screen and (max-width: 700px){
+   
+
+    /* Products Cards */
+    h4{
+      font-size: 30px;
+      margin: 15px;
+    }
+    .products-cards {
+      margin: 0%;
+      padding: 0%;
+        gap: 5px;
+    }
+    .cards {
+       margin: 0%;
+      padding: 0%;
+        width: 32%; /* 2 cards per row */
+        height: 400px;
+    }
+    
+  
+  }
+
+@media only screen and (max-width: 600px) {
+    /* Header */
+   .header {
+        display: flex;
+        justify-content: space-between; /* شعار على اليسار، روابط على اليمين */
+        align-items: center;
+        padding: 10px 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #033d03;
+        z-index: 1000;
+    }
+   .logo {
+       width: 40px;
+       padding-left: 0;
+   }
+
+
+    h1 {
+        font-size: 15px; /* حجم مناسب للهاتف */
+        margin: 0;
+        color: white;
+        font-family: "Momo Trust Display", sans-serif;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .header-links {
+        position: static; /* إزالة absolute */
+        transform: none; /* إزالة translate */
+   margin: 0 40px;
+      }
+
+    .header-links nav ul {
+        display: flex;
+    }
+
+    .header-links nav ul li a {
+        font-size: 12px;
+        padding: 5px 5px;
+        margin: 0 5px;
+    }
+
+
+    /* Home Page */
+    .home-page {
+        height: 450px;
+        padding: 5px 15px;
+    }
+    h2 {
+        font-size: 28px;
+        margin-left: 15px;
+        max-width: 300px;
+    }
+    h3 {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    .slideshow {
+        max-width: 250px;
+        max-height: 300px;
+        margin: 15px 15px 15px 60px;
+    }
+    .btn-home-page a{
+       font-size: 7px;
+       margin: 10px 15px;
+       padding: 5px 5px;
+    }
+
+    /* Products Cards */
+    h4{
+      font-size: 30px;
+      margin: 15px;
+    }
+    .products-cards {
+      margin: 0%;
+      padding: 0%;
+        gap: 5px;
+    }
+    .cards {
+       margin: 0%;
+      padding: 0%;
+        width: 48%; /* 2 cards per row */
+        height: 450px;
+    }
+    .cards-name {
+        font-size: 25px;
+        margin: 6px 0 6px 8px;
+    }
+    .preis{
+      margin-left: 10px;
+    }
+    .preis-before {
+        font-size: 20px;
+    }
+    .preis-after {
+        font-size: 25px;
+    }
+    .btn-cart {
+        font-size: 14px;
+        padding: 5px;
+        height: 35px;
+        width: 95%;
+    }
+
+    /* Contact Page */
+    #contact {
+        height: 250px;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 80%;
+    }
+    h6 {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 13px;
+    }
+    .service-icon ul li {
+        gap: 3px;
+        font-size: 13px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    /* Header */
+   .header {
+        display: flex;
+        justify-content: space-between; /* شعار على اليسار، روابط على اليمين */
+        align-items: center;
+        padding: 10px 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #033d03;
+        z-index: 1000;
+    }
+   .logo {
+       width: 40px;
+       padding-left: 0;
+   }
+
+
+    h1 {
+        font-size: 15px; /* حجم مناسب للهاتف */
+        margin: 0;
+        color: white;
+        font-family: "Momo Trust Display", sans-serif;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .header-links {
+        position: static; /* إزالة absolute */
+        transform: none; /* إزالة translate */
+   margin: 0 40px;
+      }
+
+    .header-links nav ul {
+        display: flex;
+    }
+
+    .header-links nav ul li a {
+        font-size: 12px;
+        padding: 5px 5px;
+        margin: 0 5px;
+    }
+
+
+    /* Home Page */
+    .home-page {
+        height: 450px;
+        padding: 5px 15px;
+    }
+    h2 {
+        font-size: 25px;
+        margin-left: 15px;
+        max-width: 300px;
+    }
+    h3 {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    .slideshow {
+        max-width: 300px;
+        max-height: 270px;
+        margin: 15px 15px 15px 60px;
+    }
+    .btn-home-page a{
+       font-size: 7px;
+       margin: 10px 15px;
+       padding: 5px 5px;
+    }
+
+    /* Products Cards */
+    h4{
+      font-size: 30px;
+      margin: 15px;
+    }
+    .products-cards {
+      margin: 0%;
+      padding: 0%;
+        gap: 5px;
+    }
+    .cards {
+       margin: 0%;
+      padding: 0%;
+        width: 48%; /* 2 cards per row */
+        height: 390px;
+    }
+    .cards-name {
+        font-size: 20px;
+        margin: 6px 0 6px 8px;
+    }
+    .preis{
+      margin-left: 10px;
+    }
+    .preis-before {
+        font-size: 15px;
+    }
+    .preis-after {
+        font-size: 22px;
+    }
+    .btn-cart {
+        font-size: 12px;
+        padding: 5px;
+        height: 30px;
+        width: 95%;
+    }
+
+    /* Contact Page */
+    #contact {
+        height: 250px;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 80%;
+    }
+    h6 {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 13px;
+    }
+    .service-icon ul li {
+        gap: 3px;
+        font-size: 13px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    /* إخفاء شعار H1 */
+    h1 {
+      font-size: 10px;
+    }
+
+    /* Header */
+    .header {
+        padding: 5px 10px;
+    }
+
+    .logo {
+        width: 30px; /* تصغير الشعار */
+        padding-left: 5px;
+    }
+
+    .header-links nav ul li a {
+        font-size: 10px; /* تصغير الروابط */
+        padding: 3px 3px;
+        margin: 0 3px;
+    }
+
+    /* Home Page */
+    .home-page {
+        height: 300px;
+        padding: 3px 10px;
+    }
+    h2 {
+        font-size: 22px;
+        margin-left: 10px;
+        max-width: 200px;
+    }
+    h3 {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .slideshow {
+        max-width: 150px;
+        max-height: 200px;
+        margin: 10px 10px;
+    }
+    .btn-home-page a {
+        font-size: 6px;
+        margin: 5px 10px;
+        padding: 3px 3px;
+    }
+
+    /* Products Cards */
+    h4 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .products-cards {
+        gap: 5px;
+    }
+    .cards {
+        width: 48%; /* بطاقة واحدة في الصف */
+        height: 330px;
+        margin: 3px 0;
+    }
+    .cards-name {
+        font-size: 19px;
+        margin: 4px auto 4px 10px;
+    }
+    .preis{
+      margin-left: 10px;
+    }
+    .preis-before {
+        font-size: 15px;
+    }
+    .preis-after {
+        font-size: 20px;
+    }
+    .btn-cart {
+        font-size: 10px;
+        padding: 6px;
+        height: 25px;
+        width: 95%;
+    }
+
+    /* Contact Page */
+    #contact {
+        height: 250px;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 300px;
+    }
+    h6 {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 13px;
+    }
+    .service-icon ul li {
+        gap: 3px;
+        font-size: 13px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+}
+  @media only screen and (max-width: 359px) {
+    /* إخفاء شعار H1 */
+    h1 {
+      font-size: 10px;
+    }
+
+    /* Header */
+    .header {
+        padding: 5px 10px;
+    }
+
+    .logo {
+        width: 30px; /* تصغير الشعار */
+        padding-left: 5px;
+    }
+
+    .header-links nav ul li a {
+        font-size: 10px; /* تصغير الروابط */
+        padding: 3px 3px;
+        margin: 0 3px;
+    }
+
+    /* Home Page */
+    .home-page {
+        height: 300px;
+        padding: 3px 10px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-left: 10px;
+        max-width: 200px;
+    }
+    h3 {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .slideshow {
+        max-width: 150px;
+        max-height: 200px;
+        margin: 10px 10px;
+    }
+    .btn-home-page a {
+        font-size: 6px;
+        margin: 5px 10px;
+        padding: 3px 3px;
+    }
+
+    /* Products Cards */
+    h4 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .products-cards {
+        gap: 5px;
+    }
+    .cards {
+        width: 48%; /* بطاقة واحدة في الصف */
+        height: 300px;
+        margin: 3px 0;
+    }
+    .cards-name {
+        font-size: 17px;
+        margin: 4px auto 4px 10px;
+    }
+    .preis{
+      margin-left: 10px;
+    }
+    .preis-before {
+        font-size: 13px;
+    }
+    .preis-after {
+        font-size: 18px;
+    }
+    .btn-cart {
+        font-size: 8px;
+        padding: 6px;
+        height: 20px;
+        width: 95%;
+    }
+
+    /* Contact Page */
+    #contact {
+        height: 250px;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 300px;
+    }
+    h6 {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 13px;
+    }
+    .service-icon ul li {
+        gap: 3px;
+        font-size: 13px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
 }

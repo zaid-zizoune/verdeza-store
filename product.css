@@ -329,3 +329,347 @@ border-radius: 10px;
    align-items: center;
    gap: 15px;
 }
+@media only screen and (min-width: 1300px) {
+  h1 { font-size: 40px; }
+  .logo { width: 100px; }
+  .main-img { width: 750px; height: 700px; }
+  .side-img img { width: 120px; height: 120px; }
+  .description-cntr { width: 750px; }
+  .order-form-cntr { width: 500px; }
+  h2 { font-size: 28px; }
+  .preis-after { font-size: 40px; }
+}
+@media only screen and (max-width: 1000px) {
+
+  /* Header */
+  h1 { font-size: 22px; }
+  .logo { width: 55px; }
+  .header { padding: 10px 5px; }
+
+  /* Main Product Image */
+  .products-page-cntr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .description-cntr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  .preis{
+ margin: 0 0 0 auto;
+        text-align: right;
+    }
+    .discount-badge{
+         margin: 10px 0 10px auto;
+        text-align: right;
+    }
+    .preis,
+.order-form-cntr,
+.features-dsc {
+    align-self: flex-end; /* تحريك العنصر إلى أقصى اليمين */
+}
+ 
+   /* Contact Page */
+    #contact {
+        height: 200px;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 25px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 80%;
+    }
+    h6 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 18px;
+    }
+    .service-icon ul li {
+        gap: 3px;
+        font-size: 18px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+  /* Header */
+  h1 { font-size: 22px; }
+  .logo { width: 55px; }
+  .header { padding: 10px 5px; }
+
+  /* Main Product Image */
+  .products-page-cntr{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+ .preis{
+ margin: 0 0 0 auto;
+        text-align: right;
+    }
+    .discount-badge{
+         margin: 10px 0 10px auto;
+        text-align: right;
+    }
+    .preis,
+.order-form-cntr,
+.features-dsc {
+    align-self: flex-end; /* تحريك العنصر إلى أقصى اليمين */
+}
+   /* Contact Page */
+    #contact {
+        height: 200px;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 25px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 80%;
+    }
+    h6 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 18px;
+    }
+    .service-icon ul li {
+        gap: 3px;
+        font-size: 18px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+  /* Header */
+  h1 { font-size: 20px; }
+  .logo { width: 50px; }
+  .header { padding: 10px 5px; }
+
+  /* Main Product Image */
+  .products-page-cntr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  img-cntr,
+    .description-page-cntr,
+    .order-form-cntr {
+        width: 90%;        /* أو 100% حسب اختيارك */
+        margin: 0 auto;    /* وسط الصفحة */
+    }
+
+    /* الصورة الرئيسية */
+    .main-img {
+        width: 390px;
+         height: 350px;
+    }
+
+    .main-img img {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* الصور الجانبية تحت الصورة */
+    .side-img {
+        justify-content: center;
+    }
+    .description-page-cntr{
+        padding: 0px;
+        width: 98%;
+    }
+    #product-name{
+        display: none;
+    }
+    h2{
+        font-size: 20px;
+        margin: 5px;
+    }
+    hr {
+        display: none;
+    }
+    .preis{
+ margin: 0 0 0 auto;
+        text-align: right;
+    }
+    .discount-badge{
+         margin: 10px 0 10px auto;
+        text-align: right;
+    }
+    /* Contact Page */
+    #contact {
+        height: auto;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 90%;
+    }
+    h6 {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 13px;
+    }
+    .service ul {
+        padding: 0px;
+        font-size: 13px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+ }
+ @media only screen and (max-width: 400px) {
+
+  /* Header */
+  h1 { font-size: 20px; }
+  .logo { width: 50px; }
+  .header { padding: 10px 5px; }
+
+  /* Main Product Image */
+  .products-page-cntr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  img-cntr,
+    .description-page-cntr,
+    .order-form-cntr {
+        width: 90%;        /* أو 100% حسب اختيارك */
+        margin: 0 auto;    /* وسط الصفحة */
+    }
+
+    /* الصورة الرئيسية */
+    .main-img {
+        width: 390px;
+         height: 350px;
+    }
+
+    .main-img img {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* الصور الجانبية تحت الصورة */
+    .side-img {
+        justify-content: center;
+    }
+    .description-page-cntr{
+        padding: 0px;
+        width: 98%;
+    }
+    #product-name{
+        display: none;
+    }
+    h2{
+        font-size: 20px;
+        margin: 5px;
+    }
+    hr {
+        display: none;
+    }
+    .preis{
+ margin: 0 0 0 auto;
+        text-align: right;
+    }
+    .preis-after{
+        font-size: 25px;
+    }
+    .preis-before{
+        font-size: 20px;
+    }
+    .discount-badge{
+         margin: 10px 0 10px auto;
+        text-align: right;
+    }
+    .order-form-cntr{
+justify-content: center;
+align-items: center;
+width: 98%;
+padding: 10px;
+margin: 0px;
+    }
+    .order-form-cntr input {
+        margin: 3px;
+    }
+    .order-form-cntr button {
+        margin: 3px;
+    }
+    /* Contact Page */
+    #contact {
+        height: auto;
+        padding: 3px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .cnt-srvc {
+        margin-top: 15px;
+        width: 90%;
+    }
+    h6 {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .contact-icon, .service-icon ul {
+        padding: 5px;
+    }
+    .contact-icon li a{
+      font-size: 13px;
+    }
+    .service ul {
+        padding: 0px;
+        font-size: 13px;
+    }
+    .direct-contact, .service {
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+ }
+ 
