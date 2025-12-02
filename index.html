@@ -54,9 +54,10 @@
         <div class="slideshow">
           <img
             src="home-images/img1.jpeg"
-            class="slide"
+            class="slide active"
             alt="imag 5"
             srcset=""
+            
           />
           <img
             src="home-images/img2.jpeg"
@@ -479,11 +480,16 @@
       </div> 
    </div>   
     </section>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-<script type="text/javascript">
-  emailjs.init("YOUR_PUBLIC_KEY"); // ضع هنا مفتاحك العام من حساب EmailJS
-</script>
-    <script src="js/products.js"></script>
-   <script src="script.js"></script>
+   >
+  <!-- تحميل EmailJS SDK أولاً مع defer -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js" ></script>
+
+  
+
+  <!-- سكربتات أخرى -->
+  <script src="script.js"  ></script>
+  <script src="product.js" ></script>
+    
+  
   </body>
 </html>

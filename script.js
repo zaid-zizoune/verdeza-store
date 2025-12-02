@@ -1,3 +1,23 @@
+const images = document.querySelectorAll('.slideshow img');
+let current = 0;
+
+setInterval(() => {
+  images[current].classList.remove('active');
+  current = (current + 1) % images.length;
+  images[current].classList.add('active');
+}, 3000);
+
+ window.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.slideshow img'); // استخدم class الصحيح
+  let current = 0;
+
+  setInterval(() => {
+    images[current].classList.remove('active');  // اخفاء الصورة الحالية
+    current = (current + 1) % images.length;     // الانتقال للصورة التالية
+    images[current].classList.add('active');     // اظهار الصورة الجديدة
+  }, 3000);
+});
+
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");

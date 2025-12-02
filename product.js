@@ -1,6 +1,7 @@
 if (typeof emailjs === "undefined") {
     console.error("EmailJS SDK لم يتم تحميله!");
-} else {
+    }
+ else {
     emailjs.init("FF-xWGtx6qAxTsxfu");
 }
 const products = {
@@ -858,3 +859,38 @@ document.getElementById("features").innerHTML = product.features;
 // ----------------------------
 //       إرسال الطلب عبر EmailJS
 // ----------------------------
+document.addEventListener("DOMContentLoaded", function() {
+  if (typeof emailjs === "undefined") {
+    console.error("EmailJS SDK لم يتم تحميله!");
+    return;
+  }
+
+  emailjs.init("FF-xWGtx6qAxTsxfu"); // ضع مفتاحك العام هنا
+
+  const orderForm = document.getElementById("order-form");
+  if (!orderForm) return;
+
+  orderForm.addEventListener("submit", function(e) {
+    e.preventDefault(); // منع إرسال الفورم بشكل افتراضي
+
+    const templateParams = {
+      productName: "Produit Exemple", // يمكنك تغييره ديناميكيًا
+      productPrice: "100$",            // يمكنك تغييره ديناميكيًا
+      quantity: orderForm.elements["quantity"].value,
+      customerName: orderForm.elements["name"].value,
+      customerPhone: orderForm.elements["phone"].value,
+      customerCity: orderForm.elements["city"].value
+    };
+
+    emailjs.send("service_i91m0wp", "template_h7c7i0j", templateParams)
+      .then(function(response) {
+        console.log("تم الإرسال بنجاح!", response.status, response.text);
+        alert("تم إرسال الطلب بنجاح!");
+        orderForm.reset();
+      })
+      .catch(function(error) {
+        console.error("فشل الإرسال...", error);
+        alert("حدث خطأ، حاول مرة أخرى.");
+      });
+  });
+});

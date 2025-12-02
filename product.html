@@ -8,7 +8,7 @@
   <!-- خطوط Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bree+Serif&family=Changa+One:ital@0;1&family=Courgette&family=Creepster&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Indie+Flower&family=League+Spartan:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Luckiest+Guy&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bree+Serif&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <!-- Header ثابت -->
+  <!-- Header -->
   <div class="header">
     <div class="logo">
       <img class="logo" src="../home-images/logo.jpeg" alt="Logo" />
@@ -31,9 +31,7 @@
       <div class="main-img">
         <img id="main-img" src="" alt="Produit Image" />
       </div>
-      <div class="side-img" id="side-imgs">
-        <!-- صور جانبية يتم إضافتها بواسطة JS -->
-      </div>
+      <div class="side-img" id="side-imgs"></div>
     </div>
 
     <div class="description-page-cntr">
@@ -95,40 +93,19 @@
     </div>
   </section>
 
+  <!-- سكربتات -->
 
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-<script type="text/javascript">
-  emailjs.init("FF-xWGtx6qAxTsxfu"); // ضع هنا مفتاحك العام من حساب EmailJS
+  <!-- تحميل SDK EmailJS -->
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"   
+onload="initEmailJS()" 
+        onerror="console.error('فشل تحميل EmailJS SDK')"
 
-const orderForm = document.getElementById("order-form");
+   defer>
+    
+  </script>
+  <!-- سكربتات أخرى -->
+  <script src="script.js" defer></script>
+  <script src="product.js" defer></script>
 
-orderForm.addEventListener("submit", function(e) {
-    e.preventDefault(); // منع إعادة تحميل الصفحة
-
-    // جمع البيانات المطلوبة
-    const templateParams = {
-        productName: document.getElementById("product-name").textContent.trim(),
-        productPrice: document.getElementById("price-after").textContent.trim(),
-        quantity: orderForm.elements["quantity"].value,
-        customerName: orderForm.elements["name"].value,
-        customerPhone: orderForm.elements["phone"].value,
-        customerCity: orderForm.elements["city"].value
-    };
-
-    // إرسال البريد عبر EmailJS
-    emailjs.send("service_ls5fhoz", "template_h7c7i0j", templateParams)
-        .then(function(response) {
-            console.log("تم الإرسال بنجاح!", response.status, response.text);
-            // تحويل المستخدم إلى صفحة النجاح
-            window.location.href = "order-success.html";
-        }, function(error) {
-            console.error("فشل الإرسال...", error);
-            alert("حدث خطأ، حاول مرة أخرى.");
-        });
-});
-</script>
-
-<script src="script.js"></script>
-  <script src="product.js"></script>
 </body>
 </html>
