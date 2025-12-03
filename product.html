@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Produit - Verdeza</title>
 
-  <!-- خطوط Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bree+Serif&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="product.css" />
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "FF-xWGtx6qAxTsxfu",
+      });
+   })();
+</script>
 </head>
 <body>
 
@@ -48,7 +51,7 @@
         <!-- نموذج الطلب -->
         <div class="order-form-cntr">
           <h3>للطلب يرجى ملء هذا النموذج سنتصل بكم في أقرب وقت ممكن!</h3>
-          <form id="order-form">
+          <form id="order-form" method="post">
             <input type="number" name="quantity" placeholder="Quantité" min="1" value="1" required />
             <input type="text" name="name" placeholder="Nom" required />
             <input type="tel" name="phone" placeholder="Téléphone" required />
@@ -95,15 +98,9 @@
 
   <!-- سكربتات -->
 
-  <!-- تحميل SDK EmailJS -->
-  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"   
-onload="initEmailJS()" 
-        onerror="console.error('فشل تحميل EmailJS SDK')"
 
-   defer>
-    
-  </script>
-  <!-- سكربتات أخرى -->
+  
+ 
   <script src="script.js" defer></script>
   <script src="product.js" defer></script>
 

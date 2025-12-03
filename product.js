@@ -872,10 +872,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   orderForm.addEventListener("submit", function(e) {
     e.preventDefault(); // منع إرسال الفورم بشكل افتراضي
-
-    const templateParams = {
-      productName: "Produit Exemple", // يمكنك تغييره ديناميكيًا
-      productPrice: "100$",            // يمكنك تغييره ديناميكيًا
+const productName = document.getElementById("product-name")?.textContent.trim() || "Unknown";
+const productPrice = document.getElementById("price-after")?.textContent.trim() || "0";
+    const templateParams = { 
+      productName: productName, // يمكنك تغييره ديناميكيًا
+      productPrice: productPrice,            // يمكنك تغييره ديناميكيًا
       quantity: orderForm.elements["quantity"].value,
       customerName: orderForm.elements["name"].value,
       customerPhone: orderForm.elements["phone"].value,
